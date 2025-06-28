@@ -17,7 +17,9 @@ The subsequence has the largest sum of 3 + 3 = 6.
 Example 2:
 
 Input: nums = [-1,-2,3,4], k = 3
+
 Output: [-1,3,4]
+
 Explanation: 
 The subsequence has the largest sum of -1 + 3 + 4 = 6.
 Example 3:
@@ -32,5 +34,9 @@ Another possible subsequence is [4, 3].
 Constraints:
 
 1 <= nums.length <= 1000
--105 <= nums[i] <= 105
+
+
+-10^5 <= nums[i] <= 10^5
+
+
 1 <= k <= nums.length
