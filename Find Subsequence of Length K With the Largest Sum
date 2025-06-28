@@ -1,0 +1,12 @@
+class Solution:
+    def maxSubsequence(self, nums: List[int], k: int) -> List[int]:
+        n=len(nums)
+        # tracking the index, value of nums
+        arr=[[i, nums[i]] for i in range(n)]
+        # sorting the pair based on value in reverse order
+        arr.sort(key=lambda x : -x[1]) 
+        # Taking the top k values by sorting the index
+        k_elements=sorted(arr[:k])
+        # Taking only the values from top k pairs
+        res=[val for idx,val in k_elements]
+        return res       
